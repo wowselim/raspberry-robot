@@ -1,0 +1,9 @@
+@import "addons.scss";
+@import "roboterarm_final.scss";
+
+/* This file prefixes all rules with the theme name to avoid causing conflicts with other themes. */
+/* The actual styles should be defined in roboterarm_final.scss */
+.roboterarm_final {
+  @include addons;
+  @include roboterarm_final;
+}
