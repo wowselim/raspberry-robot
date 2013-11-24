@@ -27,7 +27,7 @@ public class WebUI extends UI {
 	public static class Servlet extends VaadinServlet {
 	}
 
-	//private final static GPIOController roboter = new GPIOController();
+	private final static GPIOController roboter = new GPIOController();
 	
 
 	@Override
@@ -100,7 +100,7 @@ public class WebUI extends UI {
 		buttons.addComponent(motor5Zu,4,2);
 		//buttons.setComponentAlignment(motor5Zu, Alignment.MIDDLE_CENTER);
 
-		/*
+		
 		motor1Rechts.addClickListener(new Button.ClickListener() {
 			@Override
 			public void buttonClick(ClickEvent event) {
@@ -200,6 +200,6 @@ public class WebUI extends UI {
 				status.setReadOnly(true);
 			}
 		});
-		*/
+		
 	}
 }
